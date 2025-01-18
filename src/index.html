@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    My First Web Page
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about job openings at Jovian and submit your application now">
+  <meta name="keywords" content="data science, software development, jobs">
+  <meta name="author" content="Jovian">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Jovian Careers">
+  <meta property="og:description" content="Learn about job openings at Jovian and submit your application now">
+  <meta property="og:image" content="/jovian_meta.png">
+  <meta name="twitter:title" content="Jovian Careers">
+  <meta name="twitter:description" content="Learn about job openings at Jovian and submit your application now">
+  <meta name="twitter:image" content="/jovian_meta.png">
+  <title>Jovian Careers</title>
+  <link rel="icon" href="/jovian_favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="navbar">
+
+    <img id="logo" alt="Jovian Logo" src="https://i.imgur.com/m1wXjqw.png" height="30" />
+  </div>
+  <img id="banner" src="banner.jpg" alt="Banner" height="240">
+  <h1>
+    Welcome to Jovian Jovian
+  </h1>
+
+  <div id="about">
+    <div id="description">
+      <p style="margin-top: 0;">
+        At Jovian, we're on a mission to build
+        the world's most highly reputed technical
+        university, and we're building it completely
+        online. We offer several beginner friendly
+        courses that are taken by 300,000+ registered
+        users.
+      </p>
+      <p>
+        We also offer 2 industry-focused bootcamps:
+      <ol>
+        <li>
+          <a href="https://www.jovian.com/full-stack-developer-bootcamp">
+            Jovian Full Stack Developer Bootcamp
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jovian.com/data-science-bootcamp">
+            Jovian Data Science Bootcamp
+          </a>
+        </li>
+      </ol>
+      </p>
+    </div>
+    <div id="team">
+      <img id="team-image" alt="Team" src="team.jpg">
+    </div>
+  </div>
+
+
+
+
+
+  <h2>Job Opportunities</h2>
+  <div id="jobs">
+    <table id="jobs-table">
+      <tr class="jobs-header-row">
+        <th rowspan="2">Job Title</th>
+        <th colspan="2">Location</th>
+        <th rowspan="2">Salary</th>
+        <th rowspan="2">Posted On</th>
+      </tr>
+      <tr class="jobs-header-row">
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+      <tr class="jobs-data-row">
+        <td>Frontend Developer</td>
+        <td>Bengaluru</td>
+        <td>India</td>
+        <td>12,00,000 Dolares</td>
+        <td>Mar 3, 2023</td>
+      </tr>
+      <tr class="jobs-data-row">
+        <td>Full Stack Developer</td>
+        <td>New Delhi</td>
+        <td>India</td>
+        <td>12,00,000 Dolares</td>
+        <td>Feb 1, 2023</td>
+      </tr>
+      <tr class="jobs-data-row">
+        <td>Data scientist</td>
+        <td>San Francisco</td>
+        <td>USA</td>
+        <td>175,000 Dolares</td>
+        <td>Dec 22, 2022</td>
+      </tr>
+      <tr class="jobs-data-row">
+        <td>ML Engineer </td>
+        <td colspan="2" id="Abajo">Remote</td>
+        <td>80,000 Dolares</td>
+        <td>Sep 19,2022</td>
+      </tr>
+    </table>
+    <!-- Para crear una tabla primero debemos especificar que ira una tabla con "table", dentro de este atributo escribimos las filas con "tr", para indicar el título ponemos "th", para indicar que ira información ponemos "td" -->
+  </div>
+
+  <div id="application">
+    <h2>submit your application!</h2>
+    <!-- Con "input", podemos especificar qué queremos que vaya dentro de las casillas del formulario, ya sean fechas, texto, números, etc."name" sirve para especificar que atributo tiene cada dato subido. -->
+    <form id="application-form" action="https://formbold.com/s/oPbmQ" method="POST" enctype="multipart/form-data">
+      <!-- Con "action" podemos pegr el link de la página para leer las respuestas de la encuesta, con "method" especificamos que queremos que se suban estas respuestas -->
+      <div class="form-group">
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="Full Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="Email Address" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label><br>
+        <input type="tel" id="phone" name="phone" required placeholder="+595">
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="position">Position Applied for</label><br>
+        <select id="position" name="Position Applied" required>
+          <option value="">Select position</option>
+          <option value="Frontend">Frontend Developer</option>
+          <option value="Fullstack">Full Stack Developer</option>
+          <option value="Scientist">Data Scientist</option>
+          <option value="Engineer">ML Engineer</option>
+        </select>
+        <!-- Con "select", podemos hacer una lista para seleccionar una opción, con "option" añadimos las opciones y con "value" especifica en el servidor el valor que eligio el usuario -->
+      </div>
+      <div class="form-group">
+        <label for="resume">Upload Resume</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+      </div>
+      <!-- Con "file" podemos hacer que los usuarios suban documentos de diferentes tipos, y con "accept" especificamos qué tipo de documento se aceptan -->
+      <div class="form-group">
+        <label for="coverletter">Cover Letter</label><br>
+        <textarea id="coverletter" name="coverletter" rows="5" required
+          placeholder="Explain what makes you suitable for the job.."></textarea>
+      </div>
+      <!-- Con "textarea" podemos designar un espacio para que podamos poner texto en este, con "rows" especificamos de que tamaño debe ser el area -->
+      <div class="form-group">
+        <label for="terms"></label>
+        <input type="checkbox" id="terms" name="terms" required>
+        I agree to the terms and conditions
+      </div>
+      <div class="form-group">
+        <input id="Submit" type="submit" value="Submit Application">
+      </div>
+    </form>
+  </div>
+
+  <div id="footer">
+    <ul id="footer-links">
+      <li>
+        <a href="https://jovian.com/learn" target="_blank">
+          Courses
+        </a>
+      </li>
+      <li>
+        <a href="https://jovian.com/learn" target="_blank">
+          Programs
+        </a>
+      </li>
+      <li>
+        <a href="https://youtube.com/@jovianhq" target="_blank">
+          YouTube
+        </a>
+      </li>
+    </ul>
+    <span class="copyright">© 2023, Jovian </span>
+  </div>
+
+</body>
+
+</html>
