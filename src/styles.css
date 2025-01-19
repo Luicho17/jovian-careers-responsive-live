@@ -5,28 +5,18 @@ body {
   font-size: 1rem;
   color: #444444;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   color: #222222;
 }
-
 a {
   text-decoration: none;
   color: #3882F6;
 }
-
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #1D4ED8;
 }
-
 /* Cuando usamos ":hover", hacemos que los links que estemos por presionar con el ratón por encima cambien de color */
 
 #navbar {
@@ -82,22 +72,21 @@ h2 {
   padding: 0 8px;
 }
 
-#application {
+#application{
   max-width: 800px;
   margin: 0 auto;
   padding: 0 8px;
 }
 
-#application-form div {
+#application-form div{
   margin: 8px;
 }
 
-#application-form label {
+#application-form label{
   font-weight: 600;
 }
 
-#application-form input,
-select {
+#application-form input, select{
   padding: 4px;
   font-size: 1.25rem;
   margin-top: 4px;
@@ -105,7 +94,7 @@ select {
   border: 1px solid gray;
 }
 
-.form-group textarea {
+.form-group textarea{
   width: 80%;
   font-family: "Roboto", sans-serif;
 }
