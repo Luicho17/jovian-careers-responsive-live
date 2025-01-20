@@ -5,11 +5,19 @@ body {
   font-size: 1rem;
   color: #444444;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+/* Cuando querramos modificar una caraceristica del sitio web, especificamente para pantallas o para imprimir o hacer pdf, escribimos "@media", luego "screen" para indicar que los cambios se realizan cuando la web se vea desde una pantalla, luego "and (min-width: la cantidad minima de px para que los cambios se realicen)", luego debajo de eso seleccionamos lo que querramos cambiar y lo especificamos. */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   color: #222222;
 }
+
 a {
   text-decoration: none;
   color: #3882F6;
