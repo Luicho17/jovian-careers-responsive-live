@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <title>Flexbox Prractice</title>
+  <style>
+    #container {
+      background-color: coral;
+      border: 1px solid black;
+      font-family: sans-serif;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* con "display: flex;" podemos hacer que los items estén en fila en lugar de ser ordenados por columnas, está puesto en el "#container" lo que causa que los items estén de esta forma, con "flex-wrap" y "wrap" hacemos que los items que no entran en la vista de la página, sigan mostrandose debajo de los otros items que si entran */
+    }
+
+    .item {
+      border: 1px solid black;
+      padding: 10px 30px;
+      background-color: cornflowerblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="item-1" class="item">
+      Item 1
+    </div>
+    <div id="item-2" class="item">
+      Item 2
+    </div>
+    <div id="item-3" class="item">
+      Item 3
+    </div>
+    <div id="item-4" class="item">
+      Item 4
+    </div>
+    <div id="item-1" class="item">
+      Item 1
+    </div>
+    <div id="item-2" class="item">
+      Item 2
+    </div>
+    <div id="item-3" class="item">
+      Item 3
+    </div>
+    <div id="item-4" class="item">
+      Item 4
+    </div>
+</body>
+
+</html>
