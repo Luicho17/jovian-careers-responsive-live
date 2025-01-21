@@ -22,19 +22,37 @@ h6 {
   color: #222222;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1rem; }
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
 
 a {
   text-decoration: none;
   color: #3882F6;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #1D4ED8;
 }
 
@@ -43,11 +61,30 @@ a:hover, a:focus {
   margin: 0;
 }
 
+#logo-with-text {
+  display: none;
+}
 
+#banner {
+  object-fit: cover;
+  /* Con "objet-fit: cover;" nos aseguramos que que el objeto dependiendo del width que se asigne, abarque todo el espacio */
+  height: 120px;
+  width: 100%;
+}
 
 /* Small devices (tablets) */
 @media screen and (min-width: 576px) {
-  font-size: 16px;
+  html {
+    font-size: 16px;
+  }
+
+  #logo-with-text {
+    display: block;
+  }
+
+  #logo {
+    display: none;
+  }
 }
 
 /* Medium devices (laptops) */
@@ -105,9 +142,6 @@ a:hover, a:focus {
   margin: 0;
 }
 
-#banner {
-  object-fit: cover;
-}
 
 h1 {
   text-align: center;
