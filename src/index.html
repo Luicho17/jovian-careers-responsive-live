@@ -147,7 +147,7 @@
   </div>
 
   <div id="application">
-    <h2>submit your application!</h2>
+    <h2>Submit your application!</h2>
     <!-- Con "input", podemos especificar qué queremos que vaya dentro de las casillas del formulario, ya sean fechas, texto, números, etc."name" sirve para especificar que atributo tiene cada dato subido. -->
     <form id="application-form" action="https://formbold.com/s/oPbmQ" method="POST" enctype="multipart/form-data">
       <!-- Con "action" podemos pegr el link de la página para leer las respuestas de la encuesta, con "method" especificamos que queremos que se suban estas respuestas -->
@@ -178,7 +178,7 @@
         </select>
         <!-- Con "select", podemos hacer una lista para seleccionar una opción, con "option" añadimos las opciones y con "value" especifica en el servidor el valor que eligio el usuario -->
       </div>
-      <div class="form-group">
+      <div id="upload-resume" class="form-group">
         <label for="resume">Upload Resume</label><br>
         <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
       </div>
