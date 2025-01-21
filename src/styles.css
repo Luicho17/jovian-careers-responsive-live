@@ -72,6 +72,33 @@ a:focus {
   width: 100%;
 }
 
+h1 {
+  text-align: center;
+  margin: 12px 0;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+#description {
+  padding-right: 8px;
+  font-size: 1.5rem;
+}
+
+#team {
+  width: 100%;
+}
+
+#team-image {
+  border-radius: 5px;
+  width: 100%;
+}
+
 /* Small devices (tablets) */
 @media screen and (min-width: 576px) {
   html {
@@ -85,11 +112,39 @@ a:focus {
   #logo {
     display: none;
   }
+
+  #baner {
+    height: 200px;
+  }
+
+  h1 {
+    margin 16px
+  }
 }
 
 /* Medium devices (laptops) */
 @media screen and (min-width: 768px) {
-  /* CSS rules */
+  #baner {
+    height: 250px;
+  }
+
+  h1 {
+    margin: 20px 0;
+  }
+
+  #about {
+    max-width: 800px;
+    flex-direction: row;
+  }
+
+  #description {
+    width: 50%;
+    padding-right: 8px;
+  }
+
+  #team {
+    width: 50%;
+  }
 }
 
 /* Large devices (desktops) */
@@ -99,7 +154,9 @@ a:focus {
 
 /* Extra large devices (desktops) */
 @media screen and (min-width: 1200px) {
-  /* CSS rules */
+  #baner {
+    height: 300px;
+  }
 }
 
 /*
@@ -143,9 +200,7 @@ a:hover, a:focus {
 }
 
 
-h1 {
-  text-align: center;
-}
+
 
 #banner {
   width: 100%;
@@ -158,10 +213,7 @@ h1 {
   padding: 8px;
 }
 
-#description {
-  width: 50%;
-  padding-right: 8px;
-}
+
 
 #team {
   width: 50%;
