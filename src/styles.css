@@ -178,6 +178,11 @@ select {
   width: 90%;
 }
 
+#Submit:hover {
+  background-color: rgb(255, 99, 99);
+  color: rgb(255, 255, 255)
+}
+
 #footer {
   background-color: rgb(230, 230, 255);
   padding: 8px;
