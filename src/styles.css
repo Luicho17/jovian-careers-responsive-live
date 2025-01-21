@@ -54,6 +54,7 @@ a {
 a:hover,
 a:focus {
   color: #1D4ED8;
+  /* Cuando usamos ":hover", hacemos que los links que estemos por presionar con el ratón por encima cambien de color */
 }
 
 #navbar {
@@ -99,8 +100,28 @@ h1 {
   width: 100%;
 }
 
+h2 {
+  text-align: center;
+}
+
+#jobs {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+#jobs-list {
+  display: block;
+}
+
+#jobs-table {
+  display: none;
+}
+
 /* Small devices (tablets) */
 @media screen and (min-width: 576px) {
+
+  /* Cuando querramos modificar una caraceristica del sitio web, especificamente para pantallas o para imprimir o hacer pdf, escribimos "@media", luego "screen" para indicar que los cambios se realizan cuando la web se vea desde una pantalla, luego "and (min-width: la cantidad minima de px para que los cambios se realicen)", podemos agregar más de una condición repitiendo el mismo paso desde "and" y volviendo a especificar las caracteristicas que queremos, luego debajo de eso seleccionamos lo que querramos cambiar y lo especificamos. */
   html {
     font-size: 16px;
   }
@@ -118,7 +139,7 @@ h1 {
   }
 
   h1 {
-    margin 16px
+    margin: 16px
   }
 }
 
@@ -145,6 +166,41 @@ h1 {
   #team {
     width: 50%;
   }
+
+  #jobs {
+    min-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+
+  #jobs-list {
+    display: none;
+  }
+
+  #jobs-table {
+    display: table;
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    /* "display: table;" permite que table tome todo el width de la pantalla en la mayoria de pantallas */
+  }
+
+  .jobs-header-row th {
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: rgb(255, 196, 196);
+    text-align: center;
+  }
+
+  .jobs-data-row td {
+    border: 1px solid gray;
+    padding: 8px;
+  }
+  
+  #jobs-table tr:nth-child(odd) {
+    background-color: rgb(255, 229, 229);
+    /* Con ":nth-child()", podemos personalizar el estilo de celdas que querramos, ya sea el patrón o el color de las celdas */
+  }
 }
 
 /* Large devices (desktops) */
@@ -159,85 +215,13 @@ h1 {
   }
 }
 
-/*
 
-html {
-font-size: 16px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto mono", sans-serif;
-  font-size: 1rem;
-  color: #444444;
-}
-
-@media screen and (min-width: 700px) and (max-width: 800px) {
-  body {
-    background-color: lightblue;
-  }
-} */
-/* Cuando querramos modificar una caraceristica del sitio web, especificamente para pantallas o para imprimir o hacer pdf, escribimos "@media", luego "screen" para indicar que los cambios se realizan cuando la web se vea desde una pantalla, luego "and (min-width: la cantidad minima de px para que los cambios se realicen)", podemos agregar más de una condición repitiendo el mismo paso desde "and" y volviendo a especificar las caracteristicas que queremos, luego debajo de eso seleccionamos lo que querramos cambiar y lo especificamos. */
-/* h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-  color: #222222;
-}
-
-a {
-  text-decoration: none;
-  color: #3882F6;
-}
-a:hover, a:focus {
-  color: #1D4ED8;
-} */
-/* Cuando usamos ":hover", hacemos que los links que estemos por presionar con el ratón por encima cambien de color */
-
-/* #navbar {
-  padding: 8px;
-  margin: 0;
-}
-
-
-
-
-#banner {
-  width: 100%;
-}
-
-#about {
-  display: flex;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 8px;
-}
-
-
-
-#team {
-  width: 50%;
-}
-
-#team-image {
-  border-radius: 5px;
-  width: 100%
-}
-
+/* 
 .location {
   color: gray;
   margin-bottom: 16px;
 }
 
-h2 {
-  text-align: center;
-}
-
-#jobs {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 8px;
-}
 
 #application{
   max-width: 800px;
@@ -308,28 +292,5 @@ h3 {
   color: gray;
 }
 
-#jobs-table {
-  width: 100%;
-  border: 1px solid gray;
-  border-collapse: collapse;
-  color: #222222;
-}
 
-.jobs-header-row th {
-  border: 1px solid gray;
-  padding: 8px;
-  background-color: rgb(255, 196, 196);
-  text-align: center;
-}
-
-.jobs-data-row td {
-  border: 1px solid gray;
-  padding: 8px;
-}
-
-#jobs-table tr:nth-child(odd) {
-  background-color: rgb(255, 229, 229);
-} 
 */
-
-/* Con ":nth-child()", podemos personalizar el estilo de celdas que querramos, ya sea el patrón o el color de las celdas */
