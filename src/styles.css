@@ -299,15 +299,16 @@ select {
   #application {
     max-width: 800px;
   }
+}
 
-  /* Large devices (desktops) */
-  @media screen and (min-width: 992px) {
-    /* CSS rules */
-  }
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) {
+  /* CSS rules */
+}
 
-  /* Extra large devices (desktops) */
-  @media screen and (min-width: 1200px) {
-    #baner {
-      height: 300px;
-    }
+/* Extra large devices (desktops) */
+@media screen and (min-width: 1200px) {
+  #baner {
+    height: 300px;
   }
+}
