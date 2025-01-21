@@ -118,6 +118,24 @@ h2 {
   display: none;
 }
 
+.job {
+  border: 1px solid #dddddd;
+  margin-top: 8px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.job-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #222222;
+}
+
+.job-detail {
+  color: #777777;
+  margin-top: 2px;
+}
+
 /* Small devices (tablets) */
 @media screen and (min-width: 576px) {
 
