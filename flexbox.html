@@ -10,13 +10,14 @@
       padding: 10px;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      /* con "display: flex;" podemos hacer que los items estén en fila en lugar de ser ordenados por columnas, está puesto en el "#container" lo que causa que los items estén de esta forma, con "flex-wrap" y "wrap" hacemos que los items que no entran en la vista de la página, sigan mostrandose debajo de los otros items que si entran */
+      height: 250px;
+      align-items: center;
+      /* con "display: flex;" podemos hacer que los items estén en fila en lugar de ser ordenados por columnas, está puesto en el "#container" lo que causa que los items estén de esta forma, con "flex-wrap" y "wrap" hacemos que los items que no entran en la vista de la página, sigan mostrandose debajo de los otros items que si entran, con "justify-content" y luego eligiendo entre las opciones podemos elegir si queremos que nuestros items tengan cierta justificación, con "align-items" podemos alinear los textos de la forma que queramos, alinearlos de manera centrada, desde la base de los items, etc, el valor default de "justify-content: flex-start;" y el valor default de "align-items: stretch;", y cuando el "flex-direction: row;", entonces "justify-content: ;" trabaja en el eje horizontal y "align-items: ;" en el eje vertical, y viceversa con "flex-direction: column;", y con "align-self: ;" podemos controlar la alineacion individual de cada item, con "flex-shrink: 0;" podemos controlar la forma en la que el contenido de un item pasa a otro reglón hacia abajo yendo desde el 1, y con "flex", todos estos cambios se hacen automaticamente dependiendo del valor que le asignemos y yendo desde el 1 */
     }
 
     .item {
       border: 1px solid black;
-      padding: 10px 30px;
+      padding: 10px;
       background-color: cornflowerblue;
     }
   </style>
@@ -36,17 +37,6 @@
     <div id="item-4" class="item">
       Item 4
     </div>
-    <div id="item-1" class="item">
-      Item 1
-    </div>
-    <div id="item-2" class="item">
-      Item 2
-    </div>
-    <div id="item-3" class="item">
-      Item 3
-    </div>
-    <div id="item-4" class="item">
-      Item 4
     </div>
 </body>
 
