@@ -1,3 +1,76 @@
+/* Base styles (extra small devices - mobile) */
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto mono", sans-serif;
+  font-size: 1em;
+  color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #222222;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+a {
+  text-decoration: none;
+  color: #3882F6;
+}
+
+a:hover, a:focus {
+  color: #1D4ED8;
+}
+
+#navbar {
+  padding: 8px;
+  margin: 0;
+}
+
+
+
+/* Small devices (tablets) */
+@media screen and (min-width: 576px) {
+  font-size: 16px;
+}
+
+/* Medium devices (laptops) */
+@media screen and (min-width: 768px) {
+  /* CSS rules */
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) {
+  /* CSS rules */
+}
+
+/* Extra large devices (desktops) */
+@media screen and (min-width: 1200px) {
+  /* CSS rules */
+}
+
+/*
+
+html {
+font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,9 +83,9 @@ body {
   body {
     background-color: lightblue;
   }
-}
+} */
 /* Cuando querramos modificar una caraceristica del sitio web, especificamente para pantallas o para imprimir o hacer pdf, escribimos "@media", luego "screen" para indicar que los cambios se realizan cuando la web se vea desde una pantalla, luego "and (min-width: la cantidad minima de px para que los cambios se realicen)", podemos agregar más de una condición repitiendo el mismo paso desde "and" y volviendo a especificar las caracteristicas que queremos, luego debajo de eso seleccionamos lo que querramos cambiar y lo especificamos. */
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   color: #222222;
@@ -24,10 +97,10 @@ a {
 }
 a:hover, a:focus {
   color: #1D4ED8;
-}
+} */
 /* Cuando usamos ":hover", hacemos que los links que estemos por presionar con el ratón por encima cambien de color */
 
-#navbar {
+/* #navbar {
   padding: 8px;
   margin: 0;
 }
@@ -170,6 +243,7 @@ h3 {
 
 #jobs-table tr:nth-child(odd) {
   background-color: rgb(255, 229, 229);
-}
+} 
+*/
 
 /* Con ":nth-child()", podemos personalizar el estilo de celdas que querramos, ya sea el patrón o el color de las celdas */
