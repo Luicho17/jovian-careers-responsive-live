@@ -1,9 +1,6 @@
-.blog-card {}
 
-.blog-card-image {
-  wid
+.blog-card-image> img{
+  width: 100%;
+
 }
 
-.blog-card-body {}
-
-.blog-card-info {}
