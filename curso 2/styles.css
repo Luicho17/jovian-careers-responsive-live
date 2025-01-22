@@ -40,6 +40,12 @@
   border-radius: 4px;
 }
 
+.blog-card:hover {
+  cursor:pointer;
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.2);
+  /* con "box-shadow:" podemos añadir sombra a los items cuando el ratón esté encima, esta configuración es buena, el primer número es el tamaño de la sombrea en el eje x, la segunda en el eje y, la tercera es la difuminación, y luego el color puesto en rgb, donde el cuarto número es la opacidad del color  */
+}
+
 .blog-card-image>img {
   object-fit: cover;
   /* Con "objet-fit: cover;"hacemos que las imagenes no se deformen al momento de agrandar el tamaño de la ventana */
