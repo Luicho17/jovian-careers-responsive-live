@@ -1,6 +1,64 @@
-
-.blog-card-image> img{
-  width: 100%;
-
+.blog-card-wrapper {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  /* poniendo "margin-left y right, podemos lograr igualmente que los margenes de izquierda y derecha sean iguales, por tanto quedando centrado lo que queramos */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* con "gap" podemos controlar la cantidad de distancia que queremos que hayan entre dos elementos */
 }
 
+@media screen and (min-width: 576px) {
+  .blog-card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 720px;
+  }
+
+  .blog-card {
+    width: calc((100% - 10px - 4px)/2);
+    /* para calcular wl "width", podemos usar "width:calc (las dimensiones de lo  que debamos calcular), para tener con exactitud los px o el % que necesitemos, o con la formula 
+    Width of the card = 100%-((n-1).gap-2.n)px/n
+    donde n=número de "cards" que se muestran en una fila
+    gap=espacio entre 2 "cards" */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .blog-card-wrapper {
+    max-width: 960px;
+  }
+
+  .blog-card {
+    width: calc((100% - 20px - 6px)/3);
+  }
+}
+
+.blog-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.blog-card-image>img {
+  object-fit: cover;
+  /* Con "objet-fit: cover;"hacemos que las imagenes no se deformen al momento de agrandar el tamaño de la ventana */
+  width: 100%;
+  height: 160px;
+}
+
+.blog-card-body {
+  padding: 4px;
+}
+
+.blog-card-title {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.blog-card-info {
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+}
